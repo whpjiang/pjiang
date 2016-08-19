@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout">
+<head>
+<meta charset="UTF-8"></meta>
+<title>SpringBoot学习Demo</title>
+
+</head>
+<body>
+	<table border='1' style='width：1200px; margin:0 auto;'>
+	    <tr>
+	        <td>用户名</td>
+	        <td>邮箱</td>
+	    </tr>
+	    <tr th:each="item:${demos}">
+	       <td th:text="${item.userId}">江鹏</td>
+	       <td th:text="${item.email}">5454545454545@qq.com</td>
+	    </tr>
+	</table>
+</body>
+</html>

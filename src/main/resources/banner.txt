@@ -1,0 +1,3 @@
+hyapp-server 开始运行起来...
+${application.formatted-version}
+${spring-boot.formatted-version}
